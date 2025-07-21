@@ -19,12 +19,13 @@ require_once ONYX_CONNECTOR_PATH . 'includes/visitors-tracker.php';
 require_once ONYX_CONNECTOR_PATH . 'includes/visitors-install.php';
 require_once ONYX_CONNECTOR_PATH . 'includes/cron-cleanup.php';
 
-require_once ONYX_CONNECTOR_PATH . 'vendor/plugin-update-checker/plugin-update-checker.php';
+require_once 'vendor/plugin-update-checker/plugin-update-checker.php';
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
-$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'https://github.com/hostingme/onyx-connector/',
+$myUpdateChecker = PucFactory::buildUpdateChecker(
+	'https://github.com/stevennoad/text-scroll-reveal/',
 	__FILE__,
-	'onyx-connector'
+	'text-scroll-reveal'
 );
 
 $myUpdateChecker->setBranch('main');
