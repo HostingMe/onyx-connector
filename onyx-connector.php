@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Onyx Connector
  * Description: Connects this WordPress site to your Onyx dashboard.
- * Version: 1.0.3
+ * Version: 1.0.5
  * Author: Hosting Me
  */
 
@@ -23,9 +23,9 @@ require_once 'vendor/plugin-update-checker/plugin-update-checker.php';
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
 $myUpdateChecker = PucFactory::buildUpdateChecker(
-	'https://github.com/stevennoad/text-scroll-reveal/',
+	'https://github.com/hostingme/onyx-connector/',
 	__FILE__,
-	'text-scroll-reveal'
+	'onyx-connector'
 );
 
 $myUpdateChecker->setBranch('main');
