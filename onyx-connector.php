@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Onyx Connector
  * Description: Connects this WordPress site to your Onyx dashboard.
- * Version: 1.0.2
+ * Version: 1.0.3
  * Author: Hosting Me
  */
 
